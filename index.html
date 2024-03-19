@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/ejerciciohtmlCss/estilos.css">
+</head>
+<body>
+    <section class="tabla">
+        <table>
+            <tr>
+                <th colspan="5"><center>Empleados</center></th>
+            </tr>
+            <tr class="informacion">
+                <td rowspan="2"><strong>Nombre</strong></td>
+                <td colspan="2"><center><strong>IMC</strong></center></td>
+                <td rowspan="2"><strong>Hobbies</strong></td>
+                <td rowspan="2"><strong>Materias</strong></td>
+            </tr>
+            <tr class="informacion2">
+                <td><strong>Peso</strong></td>
+                <td><strong>Altura</strong></td>
+            </tr>
+            <tr>
+                <td class="nombre">Ricardo</td>
+                <td>88</td>
+                <td>1.58</td>
+                <td>
+                    <li>Correr</li>
+                    <li>Videojuegos</li>
+                    <li>Tennis</li> 
+                </td>
+                <td>
+                    <li>Ingles</li>
+                    <li>Matematicas</li>
+                    <li>Filosofia</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Manuel</td>
+                <td>91</td>
+                <td>1.79</td>
+                <td>
+                    <li>Cocinar</li>
+                    <li>Leer</li>
+                    <li>Escuchar Música</li>
+                </td>
+                <td>
+                    <li>Lectura</li>
+                    <li>Filosofia</li>
+                    <li>Economia</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Laura</td>
+                <td>58</td>
+                <td>1.54</td>
+                <td>
+                    <li>Bailar</li>
+                    <li>Cantar</li>
+                    <li>Caminar</li>
+                </td>
+                <td>
+                    <li>Economia</li>
+                    <li>Artes</li>
+                    <li>Baile</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Carmen</td>
+                <td>69</td>
+                <td>1.72</td>
+                <td>
+                    <li>Volleyball</li>
+                    <li>Patinar</li>
+                    <li>Gimnasio</li>
+                </td>
+                <td>
+                    <li>Biologia</li>
+                    <li>Quimica</li>
+                    <li>Geologia</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Jhonathan</td>
+                <td>68</td>
+                <td>1.75</td>
+                <td>
+                    <li>Football</li>
+                    <li>Comer</li>
+                    <li>Ver Peliculas</li>
+                </td>
+                <td>
+                    <li>Emprendimiento</li>
+                    <li>Historia</li>
+                    <li>Economia</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Boris</td>
+                <td>72</td>
+                <td>1.78</td>
+                <td>
+                    <li>Basketball</li>
+                    <li>Comer</li>
+                    <li>Videojuegos</li>
+                </td>
+                <td>
+                    <li>Historia</li>
+                    <li>Arte</li>
+                    <li>Literatura</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Sara</td>
+                <td>82</td>
+                <td>1.68</td>
+                <td>
+                    <li>Comer</li>
+                    <li>Viajar</li>
+                    <li>Bailar</li>
+                </td>
+                <td>
+                    <li>Geografia</li>
+                    <li>Filosofia</li>
+                    <li>Religion</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">David</td>
+                <td>79</td>
+                <td>1.91</td>
+                <td>
+                    <li>Videojuegos</li>
+                    <li>Leer</li>
+                    <li>Natación</li>
+                </td>
+                <td>
+                    <li>Tecnologia</li>
+                    <li>Informatica</li>
+                    <li>Ingles</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Esteban</td>
+                <td>82</td>
+                <td>1.88</td>
+                <td>
+                    <li>Gimnasio</li>
+                    <li>Caminar</li>
+                    <li>Videojuegos</li>
+                </td>
+                <td>
+                    <li>Geografia</li>
+                    <li>Biologia</li>
+                    <li>Historia</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="nombre">Erika</td>
+                <td>54</td>
+                <td>1.58</td>
+                <td>
+                    <li>Bailar</li>
+                    <li>Leer</li>
+                    <li>Escuchar Música</li>
+                </td>
+                <td>
+                    <li>Arte</li>
+                    <li>Biologia</li>
+                    <li>Ingles</li>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section class="formulario">
+        <form action="/send" method="get" target="_blank" accept-charset="utf-8" autocomplete="off">
+        <fieldset>
+            <legend>Rellenar</legend>
+            <label for="">Sexo:</label>
+            <select name="sexo" id="sexo">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select><br>
+            <label for="color">Elija un Color</label>
+            <input type="color"><br>
+            <label for="fecha">Elija una Fecha:</label>
+            <input type="date" name="fecha" id="fecha"><br>
+            <label for="">Lenguajes:</label>
+            <input type="radio" name="lenguajes" id="lenguajes">
+            <label for="">Java</label>
+            <input type="radio" name="lenguajes" id="lenguajes">
+            <label for="">Python</label>
+            <input type="radio" name="lenguajes" id="lenguajes">
+            <label for="">HTML</label>
+            <input type="radio" name="lenguajes" id="lenguajes">
+            <label for="">Visual Basic</label>
+            <input type="radio" name="lenguajes" id="lenguajes">
+            <label for="">CSS</label><br>
+            <input type="checkbox" name="hombre" id="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="checkbox" name="mujer" id="mujer">
+            <label for="mujer">Mujer</label><br>
+            <label for="fichero">ELije un Fichero:</label>
+            <input type="file" name="fichero" id="fichero"><br>
+            <textarea name="comentario" id="comentario" cols="45" rows="10" placeholder="Por favor escriba aqui..."></textarea><br>
+            <label for="instituto">Instituto</label>
+            <input type="text" name="instituto" id="instituto" size="25px"><br>
+            <label for="Estudios">Estudios Elegidos</label>
+            <input type="text" name="Estudios" id="Estudios" size="17px"><br>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" size="25px"><br>
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" name="Apellidos" id="Apellidos" size="24px"><br>
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="Email" size="27px">
+        </fieldset>
+    
+    </section>
+    <section class="formulario">
+        <fieldset>
+            <legend>Rellene las opciones siguientes</legend>
+            <input type="checkbox" name="Windows" id="Windows">
+            <label for="Windows">Windows</label>
+            <input type="checkbox" name="Mac" id="Mac">
+            <label for="Mac">Mac</label>
+            <input type="checkbox" name="Linux" id="Linux">
+            <label for="Linux">Linux</label><br>
+            <label for="hora">Elija una hora:</label>
+            <input type="time" name="hora" id="hora"><br>
+            <input type="reset" value="Clear"/>
+            <input type="submit" value="Send"/>
+        </fieldset>
+    </form>
+    </section>
+
+</body>
+</html>
